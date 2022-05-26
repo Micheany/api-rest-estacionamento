@@ -1,0 +1,31 @@
+{
+  "name": "api-rest-estacionamento",
+  "version": "1.0.0",
+  "description": "API REST para controle de veículos em um estacionamento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micheany/api-rest-estacionamento.git"
+  },
+  "keywords": [],
+  "author": "Micheany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Micheany/api-rest-estacionamento/issues"
+  },
+  "homepage": "https://github.com/Micheany/api-rest-estacionamento#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  }
+}
