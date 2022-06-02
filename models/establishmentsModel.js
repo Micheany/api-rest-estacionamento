@@ -10,6 +10,18 @@ const getAll = async () => {
   }
 }
 
+const getById = async (id) => {
+  try {
+    const [establishment] = await connection
+      .query('SELECT * FROM parking.establishments WHERE establishments_id = ?', [id])
+    return establishment
+  } catch (error) {
+    console.log(error.message)
+    return process.exit(1)
+  }
+}
+
 module.exports = {
-  getAll
+  getAll,
+  getById
 }
